@@ -52,7 +52,7 @@ echo ""
 echo "🔧 Generating HTML from data..."
 
 # Run the Node.js script to generate HTML
-node script.js
+node transform.js
 
 echo ""
 echo "✅ Done! Open index.html in your browser to view the results."
