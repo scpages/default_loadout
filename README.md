@@ -1,2 +1,3 @@
-# Star Citizen - Default Ship Component Loadout
-Star Citizen - Scripts to generate report of ships and their default loadout
+# Default Ship Component Loadout Generator in Star Citizen
+Script which will extract data from Erkul.games website, process them and generate a HTML table with list of all ships and the default components they are sold with.  
+Should be visible here: https://scpages.github.io/defaults/
