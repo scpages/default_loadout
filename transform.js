@@ -118,14 +118,14 @@ function resolve(ids, map) {
       const cls = match.class;
       const grade = match.grade;
 
-      // Build class-grade prefix if both exist
-      let prefix = "";
+      // Build class-grade suffix if both exist
+      let suffix = "";
       if (cls && grade) {
         const classInitial = cls.charAt(0).toUpperCase();
-        prefix = `${classInitial}-${grade} `;
+        suffix = ` (${classInitial}-${grade})`;
       }
 
-      return `${prefix}${name}`;
+      return `${name}${suffix}`;
     })
     .filter(Boolean);
 
