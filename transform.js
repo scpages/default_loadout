@@ -109,7 +109,23 @@ function resolve(ids, map) {
     .map(id => {
       if (!id) return null;
       const match = map.get(id);
-      return match?.name || match?.shortName || null;
+      if (!match) return null;
+
+      const name = match.name || match.shortName;
+      if (!name) return null;
+
+      // Get class and grade
+      const cls = match.class;
+      const grade = match.grade;
+
+      // Build class-grade prefix if both exist
+      let prefix = "";
+      if (cls && grade) {
+        const classInitial = cls.charAt(0).toUpperCase();
+        prefix = `${classInitial}-${grade} `;
+      }
+
+      return `${prefix}${name}`;
     })
     .filter(Boolean);
 
@@ -159,7 +175,9 @@ const html = `
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Ship Components</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Default Ship Components - Star Citizen</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
   <style>
     * {
       margin: 0;
