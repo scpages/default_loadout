@@ -1,0 +1,306 @@
+{
+  "source": "Wikelo Sheet: Ships 4.7",
+  "updated": "2026-03-26",
+  "version": "4.7",
+  "ships": [
+    {
+      "name": "Golem",
+      "components": [
+        { "type": "Weapons", "quantity": "2x", "name": "NN-13 Cannon", "size": "1", "class": "NA", "grade": "" }
+      ],
+      "notes": "Other components stock; Cooler: Thermax, Power Plant: Fortitude, Quantum Drive: Goliath, Shield Generator: Bulwark"
+    },
+    {
+      "name": "Fortune",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Lotus", "size": "1", "class": "Civilian", "grade": "A" },
+        { "type": "Shield", "quantity": "3x", "name": "7SA 'Concord'", "size": "1", "class": "Civilian", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Atlas", "size": "1", "class": "Civilian", "grade": "A" },
+        { "type": "Cooler", "quantity": "1x", "name": "Aufeis", "size": "1", "class": "Civilian", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Ursa Medivac",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "MagnaBloom", "size": "1", "class": "Civilian", "grade": "B" },
+        { "type": "Shield", "quantity": "1x", "name": "Castra", "size": "0", "class": "Industrial", "grade": "C" },
+        { "type": "Cooler", "quantity": "1x", "name": "Kelvid", "size": "0", "class": "Civilian", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Intrepid",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "WhiteRose", "size": "1", "class": "Civilian", "grade": "A" },
+        { "type": "Shield", "quantity": "1x", "name": "Palisade", "size": "1", "class": "Industrial", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Atlas", "size": "1", "class": "Civilian", "grade": "A" },
+        { "type": "Cooler", "quantity": "1x", "name": "Ultra-Flow", "size": "1", "class": "Industrial", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Nox",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "IonWave", "size": "0", "class": "Civilian", "grade": "B" },
+        { "type": "Cooler", "quantity": "1x", "name": "Tepilo", "size": "0", "class": "Civilian", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Pulse",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Radix", "size": "0", "class": "Civilian", "grade": "C" },
+        { "type": "Cooler", "quantity": "1x", "name": "Kelvid", "size": "0", "class": "Civilian", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Prospector",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Sedulity", "size": "2", "class": "Industrial", "grade": "B" },
+        { "type": "Shield", "quantity": "1x", "name": "Guardian", "size": "1", "class": "Industrial", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Colossus", "size": "2", "class": "Industrial", "grade": "B" },
+        { "type": "Cooler", "quantity": "1x", "name": "Snowpack", "size": "2", "class": "Industrial", "grade": "A" }
+      ]
+    },
+    {
+      "name": "RAFT",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Sedulity", "size": "2", "class": "Industrial", "grade": "B" },
+        { "type": "Shield", "quantity": "3x", "name": "Citadel", "size": "2", "class": "Industrial", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Huracan", "size": "2", "class": "Industrial", "grade": "B" },
+        { "type": "Cooler", "quantity": "1x", "name": "Snowfall", "size": "2", "class": "Industrial", "grade": "B" }
+      ]
+    },
+    {
+      "name": "C1 Spirit",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Lotus", "size": "2", "class": "Civilian", "grade": "A" },
+        { "type": "Shield", "quantity": "1x", "name": "7MA 'Lorica'", "size": "2", "class": "Civilian", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Hemera", "size": "2", "class": "Civilian", "grade": "A" },
+        { "type": "Cooler", "quantity": "1x", "name": "Aufeis", "size": "2", "class": "Civilian", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Sabre Peregrine",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "LumaCore", "size": "1", "class": "Competition", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "Jaghte", "size": "2", "class": "Competition", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "FoxFire", "size": "1", "class": "Competition", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "ZeroRush", "size": "1", "class": "Competition", "grade": "B" }
+      ]
+    },
+    {
+      "name": "L-21 Wolf Stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "DeltaMax", "size": "1", "class": "Stealth", "grade": "B" },
+        { "type": "Shield", "quantity": "2x", "name": "Veil", "size": "1", "class": "Stealth", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Zephyr", "size": "1", "class": "Stealth", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "VaporBlock", "size": "1", "class": "Stealth", "grade": "B" }
+      ]
+    },
+    {
+      "name": "L-21 Wolf Military",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "JS-300", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "FR-66", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "VK-00", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Glacier", "size": "1", "class": "Military", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Zeus ES",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "Genoa", "size": "2", "class": "Industrial", "grade": "A" },
+        { "type": "Shield", "quantity": "4x", "name": "Rampart", "size": "2", "class": "Industrial", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Hemera", "size": "2", "class": "Civilian", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Snowpack", "size": "2", "class": "Industrial", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Guardian",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "QuadraCell", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Shield", "quantity": "1x", "name": "FR-76", "size": "2", "class": "Military", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "VK-00", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Cooler", "quantity": "1x", "name": "Glacier", "size": "1", "class": "Military", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Mirai Guardian MX",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Bolide", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Shield", "quantity": "2x", "name": "CoverAll", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "XL-1", "size": "2", "class": "Military", "grade": "A" },
+        { "type": "Cooler", "quantity": "1x", "name": "PermaFrost", "size": "2", "class": "Military", "grade": "B" }
+      ]
+    },
+    {
+      "name": "RSI Meteor",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Slipstream", "size": "1", "class": "Stealth", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "Mirage", "size": "1", "class": "Stealth", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Zephyr", "size": "1", "class": "Stealth", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "VaporBlock", "size": "1", "class": "Stealth", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Ares Ion",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "GammaMax", "size": "2", "class": "Stealth", "grade": "B" },
+        { "type": "Shield", "quantity": "2x", "name": "Sheut", "size": "2", "class": "Stealth", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Bolt", "size": "2", "class": "Stealth", "grade": "B" },
+        { "type": "Cooler", "quantity": "3x", "name": "IceBox", "size": "2", "class": "Stealth", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Ares Inferno",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "Bolide", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Shield", "quantity": "2x", "name": "CoverAll", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Yeager", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Cooler", "quantity": "3x", "name": "PermaFrost", "size": "2", "class": "Military", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Sabre Firebird",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "QuadraCell", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "FR-66", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "VK-00", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Glacier", "size": "1", "class": "Military", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Scorpius",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "Slipstream", "size": "1", "class": "Stealth", "grade": "A" },
+        { "type": "Shield", "quantity": "1x", "name": "Umbra", "size": "2", "class": "Stealth", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Spectre", "size": "1", "class": "Stealth", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "SnowBlind", "size": "1", "class": "Stealth", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Super Hornet Mk II",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "JS-400", "size": "2", "class": "Military", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "FR-66", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "VK-00", "size": "1", "class": "Military", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Glacier", "size": "1", "class": "Military", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Terrapin Medic",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "IonSurge", "size": "2", "class": "Civilian", "grade": "B" },
+        { "type": "Shield", "quantity": "2x", "name": "BLOC", "size": "2", "class": "Civilian", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Hyperion", "size": "1", "class": "Civilian", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "Gelid", "size": "1", "class": "Civilian", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Guardian QI",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "LumaCore", "size": "1", "class": "Competition", "grade": "A" },
+        { "type": "Shield", "quantity": "1x", "name": "Haltur", "size": "2", "class": "Competition", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "SunFire", "size": "2", "class": "Competition", "grade": "B" },
+        { "type": "Cooler", "quantity": "1x", "name": "AbsoluteZero", "size": "2", "class": "Competition", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Zeus CL",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "Genoa", "size": "2", "class": "Industrial", "grade": "A" },
+        { "type": "Shield", "quantity": "3x", "name": "Rampart", "size": "2", "class": "Industrial", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Hemera", "size": "2", "class": "Civilian", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Snowpack", "size": "2", "class": "Industrial", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Starlancer MAX",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "Lotus", "size": "2", "class": "Civilian", "grade": "A" },
+        { "type": "Shield", "quantity": "1x", "name": "Parapet", "size": "3", "class": "Industrial", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Hemera", "size": "2", "class": "Civilian", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Aufeis", "size": "2", "class": "Civilian", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Constellation Taurus",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "QuadraCell MT", "size": "2", "class": "Military", "grade": "A" },
+        { "type": "Shield", "quantity": "1x", "name": "FR-86", "size": "3", "class": "Military", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "XL-1", "size": "2", "class": "Military", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Avalanche", "size": "2", "class": "Military", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Apollo Triage",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "GammaMax", "size": "2", "class": "Stealth", "grade": "B" },
+        { "type": "Shield", "quantity": "4x", "name": "Sheut", "size": "2", "class": "Stealth", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Bolt", "size": "2", "class": "Stealth", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "IceBox", "size": "2", "class": "Stealth", "grade": "B" }
+      ]
+    },
+    {
+      "name": "F8C Lightning Military",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "LuxCore", "size": "2", "class": "Competition", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "FR-76", "size": "2", "class": "Military", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Colossus", "size": "1", "class": "Industrial", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "Glacier", "size": "1", "class": "Military", "grade": "A" }
+      ]
+    },
+    {
+      "name": "F8C Lightning Stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Eclipse", "size": "2", "class": "Stealth", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "Umbra", "size": "2", "class": "Stealth", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Colossus", "size": "1", "class": "Industrial", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "SnowBlind", "size": "1", "class": "Stealth", "grade": "A" }
+      ]
+    },
+    {
+      "name": "Starlancer TAC",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Durango", "size": "3", "class": "Industrial", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "FullBlock", "size": "3", "class": "Military", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Yeager", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Cooler", "quantity": "1x", "name": "Blizzard", "size": "3", "class": "Military", "grade": "A" }
+      ]
+    },
+    {
+      "name": "A2 Hercules",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "JS-500", "size": "3", "class": "Military", "grade": "A" },
+        { "type": "Shield", "quantity": "3x", "name": "FR-86", "size": "3", "class": "Military", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Balandin", "size": "3", "class": "Military", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "Mercury", "size": "3", "class": "Military", "grade": "C" }
+      ]
+    },
+    {
+      "name": "Asgard",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "Bolide", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Shield", "quantity": "4x", "name": "CoverAll", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Yeager", "size": "2", "class": "Military", "grade": "B" },
+        { "type": "Cooler", "quantity": "3x", "name": "PermaFrost", "size": "2", "class": "Military", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Prowler Utility",
+      "components": [
+        { "type": "Power Plant", "quantity": "1x", "name": "Eclipse", "size": "2", "class": "Stealth", "grade": "A" },
+        { "type": "Shield", "quantity": "4x", "name": "Citadel", "size": "2", "class": "Industrial", "grade": "B" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Huracan", "size": "2", "class": "Industrial", "grade": "B" },
+        { "type": "Cooler", "quantity": "2x", "name": "Snowfall", "size": "2", "class": "Industrial", "grade": "B" }
+      ]
+    },
+    {
+      "name": "Idris-P",
+      "components": [
+        { "type": "Power Plant", "quantity": "2x", "name": "Main Powerplant", "size": "4", "class": "Capital", "grade": "A" },
+        { "type": "Shield", "quantity": "2x", "name": "Holdstrong", "size": "4", "class": "Capital", "grade": "A" },
+        { "type": "Quantum Drive", "quantity": "1x", "name": "Frontline", "size": "4", "class": "Capital", "grade": "A" },
+        { "type": "Cooler", "quantity": "2x", "name": "Exotherm", "size": "4", "class": "Capital", "grade": "A" }
+      ]
+    }
+  ]
+}
