@@ -1,0 +1,96 @@
+{
+  "source": "Executive Hangars - Pyro System",
+  "updated": "2026-04-07",
+  "version": "4.7",
+  "location": "PYAM-EXHANG-0-1",
+  "ships": [
+    {
+      "name": "Anvil F7A Hornet Mk II Executive",
+      "variant": "military or stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    },
+    {
+      "name": "Anvil F8C Lightning Executive",
+      "variant": "military or stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    },
+    {
+      "name": "Drake Corsair Executive",
+      "variant": "military or stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    },
+    {
+      "name": "Drake Cutlass Black Executive",
+      "variant": "military or stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    },
+    {
+      "name": "Gatac Syulen Executive",
+      "variant": "military or stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    },
+    {
+      "name": "Mirai Guardian MX Wikelo War Special",
+      "variant": "wikelo special",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    },
+    {
+      "name": "RSI Meteor Executive",
+      "variant": "military or stealth",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    },
+    {
+      "name": "RSI Scorpius Wikelo War Special",
+      "variant": "wikelo special",
+      "components": [
+        { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
+        { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+      ]
+    }
+  ]
+}
