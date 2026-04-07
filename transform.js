@@ -141,6 +141,15 @@ try {
   console.log("⚠️  Wikelo ships not found, skipping...");
 }
 
+// Load Executive Hangar ships
+let execHangarShips = [];
+try {
+  execHangarShips = JSON.parse(fs.readFileSync("ships_exec-hangar.json", "utf-8")).ships;
+  console.log(`✅ Loaded ${execHangarShips.length} Executive Hangar ships`);
+} catch (e) {
+  console.log("⚠️  Executive Hangar ships not found, skipping...");
+}
+
 // Build table rows
 let rows = "";
 
@@ -204,6 +213,43 @@ for (const ship of wikeloShips) {
   };
 
   wikeloRows += `
+    <tr>
+      <td class="ship">${name}</td>
+      <td>${formatComponents(powerPlants)}</td>
+      <td>${formatComponents(shields)}</td>
+      <td>${formatComponents(coolers)}</td>
+      <td>${formatComponents(qdrives)}</td>
+      <td>${formatComponents(weapons)}</td>
+    </tr>
+  `;
+}
+
+// Build Executive Hangar ships table rows
+let execHangarRows = "";
+
+for (const ship of execHangarShips) {
+  const name = ship.name;
+
+  // Group components by type
+  const powerPlants = ship.components.filter(c => c.type === "Power Plant");
+  const shields = ship.components.filter(c => c.type === "Shield");
+  const coolers = ship.components.filter(c => c.type === "Cooler");
+  const qdrives = ship.components.filter(c => c.type === "Quantum Drive");
+  const weapons = ship.components.filter(c => c.type === "Weapons");
+
+  // Format component display
+  const formatComponent = (comp) => {
+    const classInitial = comp.class && comp.class !== "NA" ? comp.class.charAt(0).toUpperCase() : "";
+    const suffix = classInitial && comp.grade ? ` (${classInitial}-${comp.grade})` : "";
+    return `${comp.name}${suffix}`;
+  };
+
+  const formatComponents = (comps) => {
+    if (!comps.length) return "-";
+    return comps.map(formatComponent).join(", ");
+  };
+
+  execHangarRows += `
     <tr>
       <td class="ship">${name}</td>
       <td>${formatComponents(powerPlants)}</td>
@@ -420,6 +466,28 @@ const html = `
     </thead>
     <tbody>
       ${wikeloRows}
+    </tbody>
+  </table>
+  ` : ''}
+
+  ${execHangarRows ? `
+    <div class="section-header">
+      <h2>Executive Hangar Ships</h2>
+    </div>
+
+    <table>
+    <thead>
+      <tr>
+        <th>Ship</th>
+        <th>Power Plants</th>
+        <th>Shields</th>
+        <th>Coolers</th>
+        <th>Quantum Drives</th>
+        <th>Weapons</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${execHangarRows}
     </tbody>
   </table>
   ` : ''}
