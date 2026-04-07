@@ -132,6 +132,15 @@ function resolve(ids, map) {
   return resolved.length ? resolved.join(", ") : "-";
 }
 
+// Load Wikelo ships
+let wikeloShips = [];
+try {
+  wikeloShips = JSON.parse(fs.readFileSync("ships_wikelo.json", "utf-8")).ships;
+  console.log(`✅ Loaded ${wikeloShips.length} Wikelo ships`);
+} catch (e) {
+  console.log("⚠️  Wikelo ships not found, skipping...");
+}
+
 // Build table rows
 let rows = "";
 
@@ -165,6 +174,43 @@ for (const ship of ships) {
       <td>${resolve(qdriveIds, qdriveMap)}</td>
       <td>${resolve(weaponIds, weaponMap)}</td>
       <td>${resolve(radarIds, radarMap)}</td>
+    </tr>
+  `;
+}
+
+// Build Wikelo ships table rows
+let wikeloRows = "";
+
+for (const ship of wikeloShips) {
+  const name = ship.name;
+
+  // Group components by type
+  const powerPlants = ship.components.filter(c => c.type === "Power Plant");
+  const shields = ship.components.filter(c => c.type === "Shield");
+  const coolers = ship.components.filter(c => c.type === "Cooler");
+  const qdrives = ship.components.filter(c => c.type === "Quantum Drive");
+  const weapons = ship.components.filter(c => c.type === "Weapons");
+
+  // Format component display
+  const formatComponent = (comp) => {
+    const classInitial = comp.class && comp.class !== "NA" ? comp.class.charAt(0).toUpperCase() : "";
+    const suffix = classInitial && comp.grade ? ` (${classInitial}-${comp.grade})` : "";
+    return `${comp.quantity} ${comp.name}${suffix}`;
+  };
+
+  const formatComponents = (comps) => {
+    if (!comps.length) return "-";
+    return comps.map(formatComponent).join(", ");
+  };
+
+  wikeloRows += `
+    <tr>
+      <td class="ship">${name}</td>
+      <td>${formatComponents(powerPlants)}</td>
+      <td>${formatComponents(shields)}</td>
+      <td>${formatComponents(coolers)}</td>
+      <td>${formatComponents(qdrives)}</td>
+      <td>${formatComponents(weapons)}</td>
     </tr>
   `;
 }
@@ -288,6 +334,27 @@ const html = `
       text-decoration: underline;
     }
 
+    .section-header {
+      background: rgba(42, 159, 214, 0.1);
+      border-left: 4px solid #2a9fd6;
+      padding: 15px 20px;
+      margin: 40px 0 20px 0;
+      border-radius: 4px;
+    }
+
+    .section-header h2 {
+      color: #2a9fd6;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .section-header p {
+      color: #a0a0a0;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
     @media (max-width: 768px) {
       table {
         font-size: 0.8rem;
@@ -313,6 +380,11 @@ const html = `
   </header>
 
   <div class="container">
+    <div class="section-header">
+      <h2>Default Ship Components</h2>
+      <p>Factory default components as sold in-game</p>
+    </div>
+
     <table>
     <thead>
       <tr>
@@ -329,6 +401,29 @@ const html = `
       ${rows}
     </tbody>
   </table>
+
+  ${wikeloRows ? `
+    <div class="section-header">
+      <h2>Wikelo Modified Ships</h2>
+      <p>Special component loadouts available through Wikelo missions - <a href="https://docs.google.com/spreadsheets/d/1ji0q_pp6iW35RG1YyFEsv-lsmZOaCStJXGdIEdLLwhM/edit?gid=481073732#gid=481073732" target="_blank" style="color: #2a9fd6;">View Full Guide</a></p>
+    </div>
+
+    <table>
+    <thead>
+      <tr>
+        <th>Ship</th>
+        <th>Power Plants</th>
+        <th>Shields</th>
+        <th>Coolers</th>
+        <th>Quantum Drives</th>
+        <th>Weapons</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${wikeloRows}
+    </tbody>
+  </table>
+  ` : ''}
 
   <div class="footer">
     Generated: ${new Date().toUTCString()} |
