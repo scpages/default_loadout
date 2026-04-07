@@ -195,7 +195,7 @@ for (const ship of wikeloShips) {
   const formatComponent = (comp) => {
     const classInitial = comp.class && comp.class !== "NA" ? comp.class.charAt(0).toUpperCase() : "";
     const suffix = classInitial && comp.grade ? ` (${classInitial}-${comp.grade})` : "";
-    return `${comp.quantity} ${comp.name}${suffix}`;
+    return `${comp.name}${suffix}`;
   };
 
   const formatComponents = (comps) => {
@@ -405,7 +405,6 @@ const html = `
   ${wikeloRows ? `
     <div class="section-header">
       <h2>Wikelo Modified Ships</h2>
-      <p>Special component loadouts available through Wikelo missions - <a href="https://docs.google.com/spreadsheets/d/1ji0q_pp6iW35RG1YyFEsv-lsmZOaCStJXGdIEdLLwhM/edit?gid=481073732#gid=481073732" target="_blank" style="color: #2a9fd6;">View Full Guide</a></p>
     </div>
 
     <table>
