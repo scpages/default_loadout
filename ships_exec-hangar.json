@@ -30,10 +30,10 @@
         "name": "Drake Corsair Executive",
         "variant": "military or stealth",
         "components": [
-          { "type": "Power Plant", "quantity": "-", "name": "LuxCore", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Shield", "quantity": "-", "name": "FR-86", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Cooler", "quantity": "-", "name": "Avalanche", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Quantum Drive", "quantity": "-", "name": "Hurakan", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Power Plant", "quantity": "2x", "name": "LuxCore", "size": "S2", "class": "C", "grade": "A" },
+          { "type": "Shield", "quantity": "1x", "name": "FR-86", "size": "S3", "class": "M", "grade": "A" },
+          { "type": "Cooler", "quantity": "2x", "name": "Avalanche", "size": "S2", "class": "M", "grade": "A" },
+          { "type": "Quantum Drive", "quantity": "1x", "name": "Hurakan", "size": "S2", "class": "I", "grade": "B" },
           { "type": "Weapons", "quantity": "-", "name": "M6A, M7A, NDB-28, CF-227", "size": "-", "class": "-", "grade": "-" }
         ]
       },
