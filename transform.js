@@ -202,14 +202,17 @@ for (const ship of wikeloShips) {
 
   // Format component display
   const formatComponent = (comp) => {
-    const classInitial = comp.class && comp.class !== "NA" ? comp.class.charAt(0).toUpperCase() : "";
-    const suffix = classInitial && comp.grade ? ` (${classInitial}-${comp.grade})` : "";
+    // Skip components where name is just a dash
+    if (comp.name === "-") return null;
+    const classInitial = comp.class && comp.class !== "NA" && comp.class !== "-" ? comp.class.charAt(0).toUpperCase() : "";
+    const suffix = classInitial && comp.grade && comp.grade !== "-" ? ` (${classInitial}-${comp.grade})` : "";
     return `${comp.name}${suffix}`;
   };
 
   const formatComponents = (comps) => {
     if (!comps.length) return "-";
-    return comps.map(formatComponent).join(", ");
+    const formatted = comps.map(formatComponent).filter(Boolean).join(", ");
+    return formatted || "-";
   };
 
   wikeloRows += `
@@ -239,14 +242,17 @@ for (const ship of execHangarShips) {
 
   // Format component display
   const formatComponent = (comp) => {
-    const classInitial = comp.class && comp.class !== "NA" ? comp.class.charAt(0).toUpperCase() : "";
-    const suffix = classInitial && comp.grade ? ` (${classInitial}-${comp.grade})` : "";
+    // Skip components where name is just a dash
+    if (comp.name === "-") return null;
+    const classInitial = comp.class && comp.class !== "NA" && comp.class !== "-" ? comp.class.charAt(0).toUpperCase() : "";
+    const suffix = classInitial && comp.grade && comp.grade !== "-" ? ` (${classInitial}-${comp.grade})` : "";
     return `${comp.name}${suffix}`;
   };
 
   const formatComponents = (comps) => {
     if (!comps.length) return "-";
-    return comps.map(formatComponent).join(", ");
+    const formatted = comps.map(formatComponent).filter(Boolean).join(", ");
+    return formatted || "-";
   };
 
   execHangarRows += `
