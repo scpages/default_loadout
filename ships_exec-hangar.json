@@ -74,10 +74,10 @@
         "name": "RSI Meteor Executive",
         "variant": "military or stealth",
         "components": [
-          { "type": "Power Plant", "quantity": "-", "name": "Charger", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Shield", "quantity": "-", "name": "ForceWall", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Cooler", "quantity": "-", "name": "Polar", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Quantum Drive", "quantity": "-", "name": "Siren", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Power Plant", "quantity": "1x", "name": "Charger", "size": "S1", "class": "M", "grade": "D" },
+          { "type": "Shield", "quantity": "2x", "name": "ForceWall", "size": "S1", "class": "M", "grade": "B" },
+          { "type": "Cooler", "quantity": "2x", "name": "Polar", "size": "S1", "class": "M", "grade": "B" },
+          { "type": "Quantum Drive", "quantity": "1x", "name": "Siren", "size": "S1", "class": "M", "grade": "B" },
           { "type": "Weapons", "quantity": "-", "name": "M5A", "size": "-", "class": "-", "grade": "-" }
         ]
       },
