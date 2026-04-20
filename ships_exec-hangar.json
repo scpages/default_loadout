@@ -30,11 +30,11 @@
         "name": "Drake Corsair Executive",
         "variant": "military or stealth",
         "components": [
-          { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+          { "type": "Power Plant", "quantity": "-", "name": "LuxCore", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Shield", "quantity": "-", "name": "FR-86", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Cooler", "quantity": "-", "name": "Avalanche", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Quantum Drive", "quantity": "-", "name": "Hurakan", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Weapons", "quantity": "-", "name": "M6A, M7A, NDB-28, CF-227", "size": "-", "class": "-", "grade": "-" }
         ]
       },
       {
@@ -74,11 +74,11 @@
         "name": "RSI Meteor Executive",
         "variant": "military or stealth",
         "components": [
-          { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+          { "type": "Power Plant", "quantity": "-", "name": "Charger", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Shield", "quantity": "-", "name": "ForceWall", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Cooler", "quantity": "-", "name": "Polar", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Quantum Drive", "quantity": "-", "name": "Siren", "size": "-", "class": "-", "grade": "-" },
+          { "type": "Weapons", "quantity": "-", "name": "M5A", "size": "-", "class": "-", "grade": "-" }
         ]
       },
       {
