@@ -8,11 +8,11 @@
         "name": "Anvil F7A Hornet Mk II Executive",
         "variant": "military or stealth",
         "components": [
-          { "type": "Power Plant", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Shield", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Cooler", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Quantum Drive", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" },
-          { "type": "Weapons", "quantity": "-", "name": "-", "size": "-", "class": "-", "grade": "-" }
+          { "type": "Power Plant", "quantity": "-", "name": "Eclipse", "size": "S2", "class": "S", "grade": "A" },
+          { "type": "Shield", "quantity": "-", "name": "Mirage", "size": "S1", "class": "S", "grade": "A" },
+          { "type": "Cooler", "quantity": "-", "name": "SnowBlind", "size": "S1", "class": "S", "grade": "A" },
+          { "type": "Quantum Drive", "quantity": "-", "name": "Colossus", "size": "S1", "class": "I", "grade": "B" },
+          { "type": "Weapons", "quantity": "-", "name": "NDB-30, Revenant", "size": "-", "class": "-", "grade": "-" }
         ]
       },
       {
