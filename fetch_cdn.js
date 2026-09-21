@@ -35,24 +35,33 @@ async function getBlobs() {
   return { blobs: group.blobs, version: catalog.dataVersion };
 }
 
+function collectItems(slot, results) {
+  const port = slot.portName || "";
+  if (port.toLowerCase().includes("paint")) return;
+  const item = slot.item;
+  if (item) {
+    const name = item.i18n?.name || item.className || "";
+    if (name && item.type) {
+      results.push({
+        portName: port,
+        type: item.type || "",
+        category: item.category || "",
+        itemName: name,
+        class: item.i18n?.class || "",
+        grade: item.grade || "",
+        size: item.size || 0,
+      });
+    }
+  }
+  for (const child of slot.children || []) {
+    collectItems(child, results);
+  }
+}
+
 function extractSlots(shipData) {
   const slots = [];
   for (const slot of shipData.slots || []) {
-    const port = slot.portName || "";
-    if (port.toLowerCase().includes("paint")) continue;
-    const item = slot.item;
-    if (!item) continue;
-    const name = item.i18n?.name || item.className || "";
-    if (!name) continue;
-    slots.push({
-      portName: port,
-      type: item.type || "",
-      category: item.category || "",
-      itemName: name,
-      class: item.i18n?.class || "",
-      grade: item.grade || "",
-      size: item.size || 0,
-    });
+    collectItems(slot, slots);
   }
   return slots;
 }
