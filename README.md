@@ -1,18 +1,27 @@
-# Default Ship Component Loadout Generator for Star Citizen
+# Default Ship Loadout Generator
 
-Script which extracts data from Erkul.games website, processes them and generates a HTML table with list of all ships and their default components.
+Fetches ship loadout data from the Erkul CDN and generates a static HTML page listing all ships with their default components.
 
-Should be visible here: https://scpages.github.io/defaults/
+Live at: **https://scpages.github.io/default-loadouts/**
+
+## Workflow
+
+```bash
+# Generate HTML from local data files
+bash main.sh
+
+# Fetch fresh data from Erkul CDN, then commit + push
+bash update_loadouts.sh
+```
+
+`main.sh` only reads local files and regenerates `index.html`.
+`update_loadouts.sh` fetches from the Erkul CDN and pushes if data changed.
 
 ## Data Sources
 
-- **Default Ships**: Extracted from [erkul.games](https://www.erkul.games) API
-- **Wikelo Modified Ships**: Manually managed in `ships_wikelo.json`
-- **Executive Hangar Ships**: Manually managed in `ships_exec-hangar.json`
+- **Default Ships**: [Erkul CDN](https://cdn.erkul.games/LIVE/) — compressed binary JSON blobs
+- **Wikelo Modified Ships**: Manually maintained in `ships_wikelo.json`
+- **Executive Hangar Ships**: Manually maintained in `ships_exec-hangar.json`
 
-## Manual Data Files
-
-The `ships_wikelo.json` and `ships_exec-hangar.json` files are maintained manually with component loadouts for special ship variants.
-
-Wikelo ships data:
+Wikelo ships spreadsheet:
 https://docs.google.com/spreadsheets/d/1ji0q_pp6iW35RG1YyFEsv-lsmZOaCStJXGdIEdLLwhM/edit?gid=481073732#gid=481073732
