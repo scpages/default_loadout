@@ -48,7 +48,7 @@ function resolveWeapons(slots) {
     counts.set(name, (counts.get(name) || 0) + 1);
   }
   if (!counts.size) return "-";
-  return [...counts.entries()].map(([name, n]) => n > 1 ? `${name} x${n}` : name).join(", ");
+  return [...counts.entries()].map(([name, n]) => `${n}x ${name}`).join(", ");
 }
 
 let rows = "";
