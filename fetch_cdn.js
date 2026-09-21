@@ -79,7 +79,7 @@ async function main() {
     await new Promise(r => setTimeout(r, 100));
   }
 
-  fs.writeFileSync("ships_cdn.json", JSON.stringify(ships));
+  fs.writeFileSync("ships_cdn.json", JSON.stringify({ version, ships }));
   console.log(`\nSaved ${ships.length} ships to ships_cdn.json`);
 }
 

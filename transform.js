@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const ships = JSON.parse(fs.readFileSync("ships_cdn.json", "utf-8"));
+const { version, ships } = JSON.parse(fs.readFileSync("ships_cdn.json", "utf-8"));
 
 let wikeloShips = [];
 try {
@@ -260,7 +260,7 @@ const html = `
   ` : ""}
 
     <div class="footer">
-      Generated: ${new Date().toUTCString()} |
+      Generated: ${new Date().toUTCString()}${version ? ` | Game version: ${version}` : ""} |
       <a href="https://github.com/scpages/default_loadout" target="_blank">GitHub Repository</a> |
       Data from <a href="https://www.erkul.games" target="_blank">erkul.games</a>
     </div>
