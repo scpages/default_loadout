@@ -29,11 +29,13 @@ function resolveSlots(slots, type) {
     if (!name) continue;
     const cls = CLASS_ABBR[s.class] || s.class || "";
     const grade = s.grade || "";
-    const suffix = cls && grade ? ` (${cls}-${grade})` : cls ? ` (${cls})` : grade ? ` (${grade})` : "";
-    const label = `${name}${suffix}`;
-    if (!seen.has(label)) {
-      seen.add(label);
-      results.push(label);
+    const size = s.size ? `S${s.size}` : "";
+    const inner = [size, cls && grade ? `${cls}-${grade}` : cls || grade].filter(Boolean).join(" ");
+    const suffix = inner ? ` <span class="meta">(${inner})</span>` : "";
+    const key = `${name}${size}${cls}${grade}`;
+    if (!seen.has(key)) {
+      seen.add(key);
+      results.push(`${name}${suffix}`);
     }
   }
   return results.length ? results.join(", ") : "-";
@@ -173,6 +175,7 @@ const html = `
     tr:hover { background-color: rgba(42, 159, 214, 0.1); transition: background-color 0.2s ease; }
     tr:last-child td { border-bottom: none; }
     .ship { font-weight: 600; color: #2a9fd6; font-size: 1rem; }
+    .meta { color: #5a6a7a; font-size: 0.8em; }
     .footer {
       margin-top: 50px;
       padding: 20px 0;
