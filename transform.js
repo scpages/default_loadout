@@ -18,6 +18,8 @@ try {
   console.log("Executive Hangar ships not found, skipping...");
 }
 
+const CLASS_ABBR = { Military: "M", Industrial: "I", Stealth: "S", Civilian: "C", Competition: "Co" };
+
 function resolveSlots(slots, type) {
   const seen = new Set();
   const results = [];
@@ -25,7 +27,9 @@ function resolveSlots(slots, type) {
     if (s.type !== type) continue;
     const name = s.itemName;
     if (!name) continue;
-    const suffix = s.grade ? ` (${s.grade})` : "";
+    const cls = CLASS_ABBR[s.class] || s.class || "";
+    const grade = s.grade || "";
+    const suffix = cls && grade ? ` (${cls}-${grade})` : cls ? ` (${cls})` : grade ? ` (${grade})` : "";
     const label = `${name}${suffix}`;
     if (!seen.has(label)) {
       seen.add(label);

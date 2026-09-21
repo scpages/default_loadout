@@ -49,6 +49,7 @@ function extractSlots(shipData) {
       type: item.type || "",
       category: item.category || "",
       itemName: name,
+      class: item.i18n?.class || "",
       grade: item.grade || "",
       size: item.size || 0,
     });
