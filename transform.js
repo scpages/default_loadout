@@ -62,8 +62,8 @@ for (const ship of ships) {
       <td>${resolveSlots(slots, "Shield")}</td>
       <td>${resolveSlots(slots, "Cooler")}</td>
       <td>${resolveSlots(slots, "QuantumDrive")}</td>
-      <td>${resolveWeapons(slots)}</td>
       <td>${resolveSlots(slots, "Radar")}</td>
+      <td>${resolveWeapons(slots)}</td>
     </tr>
   `;
 }
@@ -222,8 +222,8 @@ const html = `
           <th>Shields</th>
           <th>Coolers</th>
           <th>Quantum Drives</th>
-          <th>Weapons</th>
           <th>Radar</th>
+          <th>Weapons</th>
         </tr>
       </thead>
       <tbody>
