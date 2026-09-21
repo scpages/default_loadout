@@ -4,7 +4,7 @@ echo "Starting data download and HTML generation..."
 echo ""
 
 echo "Fetching game data from cdn.erkul.games..."
-python3 fetch_cdn.py
+node fetch_cdn.js
 
 echo ""
 echo "Generating HTML from data..."
