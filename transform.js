@@ -39,6 +39,18 @@ function resolveSlots(slots, type) {
   return results.length ? results.join(", ") : "-";
 }
 
+function resolveWeapons(slots) {
+  const counts = new Map();
+  for (const s of slots) {
+    if (s.type !== "WeaponGun") continue;
+    const name = s.itemName;
+    if (!name) continue;
+    counts.set(name, (counts.get(name) || 0) + 1);
+  }
+  if (!counts.size) return "-";
+  return [...counts.entries()].map(([name, n]) => n > 1 ? `${name} x${n}` : name).join(", ");
+}
+
 let rows = "";
 for (const ship of ships) {
   const name = ship.name || "Unknown";
@@ -50,7 +62,7 @@ for (const ship of ships) {
       <td>${resolveSlots(slots, "Shield")}</td>
       <td>${resolveSlots(slots, "Cooler")}</td>
       <td>${resolveSlots(slots, "QuantumDrive")}</td>
-      <td>${resolveSlots(slots, "WeaponGun")}</td>
+      <td>${resolveWeapons(slots)}</td>
       <td>${resolveSlots(slots, "Radar")}</td>
     </tr>
   `;
